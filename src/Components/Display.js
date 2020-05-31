@@ -29,11 +29,13 @@ export default function Display(props) {
             </TableRow>
           </TableHead>
           <TableBody>
-            <TableRow>
-              <TableCell align="right">{props.data[0].itemA}</TableCell>
-              <TableCell align="right">{props.data[0].itemB}</TableCell>
-              <TableCell align="right">{props.data[0].itemC}</TableCell>
-            </TableRow>
+            {props.data.map((d) =>
+              <TableRow>
+                <TableCell align="right">{d.itemA}</TableCell>
+                <TableCell align="right">{d.itemB}</TableCell>
+                <TableCell align="right">{d.itemC}</TableCell>
+              </TableRow>
+            )}
           </TableBody>
         </Table>
       </TableContainer>

@@ -7,7 +7,8 @@ function App() {
     return { itemA, itemB, itemC };
   }
   const data = [
-    createData(10, 20, 30)
+    createData(10, 20, 30),
+    createData(40, 50, 60)
   ];
   console.log('data = ', data);
   // const data = [{ itemA: 10 }, { itemB: 20 }, { itemC: 30 }];
