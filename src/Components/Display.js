@@ -9,34 +9,34 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 
 const useStyles = makeStyles({
-    table: {
-        minWidth: 650,
-    },
+  table: {
+    minWidth: 650,
+  },
 });
-  
-export default function Display(props) {
-    const classes = useStyles();
 
-    return (
-        <div>
-            <TableContainer component={Paper}>
-                <Table className={classes.table} aria-label="simple table">
-                    <TableHead>
-                        <TableRow>
-                            <TableCell align="right">項目A</TableCell>
-                            <TableCell align="right">項目B</TableCell>
-                            <TableCell align="right">項目C</TableCell>
-                        </TableRow>
-                    </TableHead>
-                    <TableBody>
-                        <TableRow>
-                            <TableCell align="right">{props.data[0].itemA}</TableCell>
-                            <TableCell align="right">{props.data[0].itemB}</TableCell>
-                            <TableCell align="right">{props.data[0].itemC}</TableCell>
-                        </TableRow>
-                    </TableBody>
-                </Table>
-            </TableContainer>
-        </div>
-    );
+export default function Display(props) {
+  const classes = useStyles();
+
+  return (
+    <div>
+      <TableContainer component={Paper}>
+        <Table className={classes.table} aria-label="simple table">
+          <TableHead>
+            <TableRow>
+              <TableCell align="right">項目A</TableCell>
+              <TableCell align="right">項目B</TableCell>
+              <TableCell align="right">項目C</TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            <TableRow>
+              <TableCell align="right">{props.data[0].itemA}</TableCell>
+              <TableCell align="right">{props.data[0].itemB}</TableCell>
+              <TableCell align="right">{props.data[0].itemC}</TableCell>
+            </TableRow>
+          </TableBody>
+        </Table>
+      </TableContainer>
+    </div>
+  );
 }
